@@ -1,0 +1,37 @@
+header{
+    height: 100px;
+}
+
+p{
+    padding-left: 29px;
+}
+
+h1{
+    color: #15518a;
+    font-weight: bold;
+}
+
+.jumbotron{
+    background-color: #e4f6fd;
+}
+
+.quote{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.name{
+    font-size: 15px;
+}
+
+
+.journey{
+    background: #46c9fd;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .journey:hover{
+    background: #15518a;
+  }

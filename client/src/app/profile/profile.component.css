@@ -1,0 +1,20 @@
+h1{
+    color: #15518a;
+    font-weight: bold;
+}
+
+h1 strong{
+    padding-left:0px;
+}
+.jumbotron{
+    background-color: #e4f6fd;
+    padding-left: 25px;
+}
+
+strong{
+    padding-left: 25px;
+}
+
+header{
+    height: 100px;
+}

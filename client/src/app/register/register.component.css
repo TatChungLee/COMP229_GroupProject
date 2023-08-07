@@ -1,0 +1,30 @@
+.card{
+    width: 450px;
+    margin: auto;
+}
+
+label{
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+input{
+    margin-left: 15px;
+    width:94%;
+}
+
+.signUp{
+    background: #46c9fd;
+    font-weight: bold;
+    color: #ffffff;
+    width: 93%;
+  }
+  
+  .signUp:hover{
+    background: #15518a;
+  }
+
+.alert-success{
+    background: #c9ebf7;
+    color: #15518a;
+}

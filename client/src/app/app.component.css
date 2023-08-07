@@ -1,0 +1,42 @@
+*{box-sizing: border-box;}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbarItems{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: -8px;
+}
+.navbar .nav-link{
+    color: #6689a3;
+}
+.navbar .nav-link:hover{
+    color:#ffffff;
+    text-decoration: underline double 0.1px;
+    text-underline-offset: 0.5em;
+}
+
+.navbar .nav-item .nav-link.active {
+    color:#ffffff;
+    text-decoration: underline double 0.1px;
+    text-underline-offset: 0.5em;
+}
+
+footer{
+    font-size: 12px; 
+}
+
+footer a {
+    color: #91b8d5;
+}
+footer a:hover {
+    color:#ffffff;
+    text-decoration: none;
+}
+
+footer .alignRight{
+    display: table-cell;
+    text-align: right;
+}

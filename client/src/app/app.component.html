@@ -1,67 +1,61 @@
 <div>
-  <nav class="navbar navbar-expand navbar-dark bg-primary">
-    <a href="/home" class="navbar-brand"> <img src="assets/img/logo02.png" width="50" height="50"> LibBookPro</a>
-    <ul class="navbar-nav mr-auto" routerLinkActive="active">
+  <nav class="navbar navbar-expand navbar-dark sticky-top" style="background-color: #1a3d6e; height: 110px;">
+    <a href="/home" class="navbar-brand"> <img src="assets/img/logo02.png" width="75" height="75" style="margin-right: 8px; font-weight: bolder;">
+      <span style="font-family:cursive;font-size: 20px;"> LibBookPro
+      </span>
+    </a>
+    <ul class="navbar-nav ml-2 mr-auto navbarItems" routerLinkActive="active">
 
-      <!--<li class="nav-item">
+       <li class="nav-item">
  
-         <a href="/product" class="nav-link" routerLink="products">Product </a>
- 
-       </li>-->
+        <a href="/home" class="nav-link" routerLink="home" routerLinkActive="active" ariaCurrentWhenActive="page"><i class="fa fa-house mr-2 mt-2 ml-3"></i>Home </a>
+
+      </li>
 
        <li class="nav-item">
 
-        <a href="/product" class="nav-link" routerLink="products">Library </a>
+        <a href="/product" class="nav-link" routerLink="products" routerLinkActive="active" ariaCurrentWhenActive="page"><i class="fa fa-book mr-2 ml-0 mt-2 ml-2"></i>Library </a>
 
       </li>
 
        <li class="nav-item"  *ngIf="showModeratorBoard || showAdminBoard">
 
-        <a href="/Add" class="nav-link" routerLink="add">Add </a>
+        <a href="/Add" class="nav-link" routerLink="add" routerLinkActive="active" ariaCurrentWhenActive="page"><i class="fa fa-plus mr-2 ml-0 mt-2 ml-2"></i>Add </a>
 
       </li>
  
-       <li class="nav-item">
- 
-         <a href="/home" class="nav-link" routerLink="home">Home </a>
- 
-       </li>
+
  
        <li class="nav-item" *ngIf="showAdminBoard">
  
-         <a href="/admin" class="nav-link" routerLink="admin">Admin Board</a>
+         <a href="/admin" class="nav-link" routerLink="admin" routerLinkActive="active" ariaCurrentWhenActive="page"><i class="fa fa-gear mr-2 ml-0 mt-2 ml-2"></i>Admin Board</a>
  
        </li>
  
        <li class="nav-item" *ngIf="showModeratorBoard">
  
-         <a href="/mod" class="nav-link" routerLink="mod">Moderator Board</a>
+         <a href="/mod" class="nav-link" routerLink="mod" routerLinkActive="active" ariaCurrentWhenActive="page"><i class="fa fa-circle-user mr-2 ml-0 mt-2 ml-2"></i>Moderator Board</a>
  
        </li>
  
        <li class="nav-item">
  
-         <a href="/user" class="nav-link" *ngIf="isLoggedIn" routerLink="user">User</a>
+         <a href="/user" class="nav-link" *ngIf="isLoggedIn" routerLink="user" routerLinkActive="active" ariaCurrentWhenActive="page"><i class="fa fa-user mr-2 ml-0 mt-2 ml-2"></i>User</a>
  
        </li>
- 
-  
- 
      </ul>
- 
-  
- 
+
      <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
  
        <li class="nav-item">
  
-         <a href="/register" class="nav-link" routerLink="register">Sign Up</a>
+         <a href="/register" class="nav-link" routerLink="register" routerLinkActive="active" ariaCurrentWhenActive="page"><i class="fa fa-pen-to-square mr-2 ml-0 mt-2"></i>Sign Up</a>
  
        </li>
  
        <li class="nav-item">
  
-         <a href="/login" class="nav-link" routerLink="login">Login</a>
+         <a href="/login" class="nav-link" routerLink="login" routerLinkActive="active" ariaCurrentWhenActive="page"><i class="fa fa-key mr-2 ml-0 mt-2"></i>Login</a>
  
        </li>
  
@@ -73,26 +67,67 @@
  
        <li class="nav-item">
  
-         <a href="/profile" class="nav-link" routerLink="profile">{{ username }}</a>
+         <a href="/profile" class="nav-link" routerLink="profile" routerLinkActive="active" ariaCurrentWhenActive="page"><i class="fa fa-user mr-2 ml-0 mt-2"></i>{{ username }}</a>
  
        </li>
  
        <li class="nav-item">
  
-         <a href class="nav-link" (click)="logout()">LogOut</a>
+         <a href class="nav-link" (click)="logout()"><i class="fa fa-key mr-2 ml-0 mt-2"></i>LogOut</a>
  
        </li>
  
      </ul>
  
    </nav>
- 
-  
- 
+
    <div class="container">
  
      <router-outlet></router-outlet>
  
    </div>
- 
- </div>
+  <br>
+  <br>
+</div>
+
+<!-- Footer -->
+<footer class="text-left text-lg-start text-white fixed-bottom" style="background-color: #1a3d6e;">
+    <div class="p-3">
+        <section class="">
+            <!--Grid row-->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-5.5 col-lg-5.5 col-xl-5.5 mt-0">
+                  <h6 class="mb-1 font-weight-bold ml-3">
+                    <img src="assets/img/logo02.png" width="30" height="30" style="margin-right: 5px;">
+                    <span style = "font-weight:lighter; font-size: 12px; color: #bbddf7;"> © 2023 Team LibBookPro. All rights reserved. Credits to 
+                    <a href="https://www.amazon.ca/" target="_blank">Amazon</a> and <a href="https://www.cem.org/blog/10-essential-reads-to-improve-reading-comprehension" target="_blank">Cambridge</a>.</span>
+                  </h6>
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2"></div>
+                <!-- Grid column -->
+                <div class="col-md-4.5 col-lg-4.5 col-xl-4.5 mt-1 text-right align-items-right alignRight">
+                  <span class="mb-1 font-weight-bold ml-5 pl-1">
+                    Contact: 
+                    <span style = "font-weight:lighter;">
+                      <i class="fas fa-envelope mr-1 ml-3"></i> 
+                      <a href="mailto:LibBookPro@gmail.com" target="_blank"> LibBookPro@gmail.com</a>
+                    </span>
+                    <span style = "font-weight:lighter;">
+                      <i class="fas fa-phone mr-1 ml-4"></i>
+                      <a href="tel:+1234567890"> + 1 234 567 890</a>
+                    </span>
+                    <span style = "font-weight:lighter;">
+                      <i class="fab fa-facebook-f ml-4 mr-1"></i>
+                      <a href="www.facebook.com/LibBookPro" target="_blank"> LibBookPro</a>
+                    </span>
+                  </span>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!--Grid row-->
+        </section>
+    </div>
+</footer>
+<!-- Footer -->

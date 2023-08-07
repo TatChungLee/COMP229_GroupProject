@@ -2,3 +2,30 @@
   max-width: 400px;
   margin: auto;
 }
+
+.submit-button{
+  background: #46c9fd;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.submit-button:hover{
+  background: #15518a;
+}
+
+label{
+  font-weight:bold;
+}
+
+h1{
+  color: #15518a;
+  font-weight: bold;
+}
+
+.jumbotron{
+  background-color: #e4f6fd;
+}
+
+header{
+  height: 100px;
+}

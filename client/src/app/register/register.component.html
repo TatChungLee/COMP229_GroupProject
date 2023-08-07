@@ -1,9 +1,10 @@
-<div class="col-md-12">
-    <div class="card card-container">
+<div class="col-md-12 mt-3 mb-5">
+    <div class="card card-container mb-5">
       <img
         id="profile-img"
         src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
-        class="profile-img-card"
+        class="profile-img-card mt-3 ml-3 mb-3 mx-auto"
+        width="200"
       />
       <form
         *ngIf="!isSuccessful"
@@ -54,7 +55,7 @@
             </div>
           </div>
         </div>
-        <div class="form-group">
+        <div class="form-group mb-4">
           <label for="password">Password</label>
           <input
             type="password"
@@ -74,7 +75,7 @@
           </div>
         </div>
         <div class="form-group">
-          <button class="btn btn-primary btn-block">Sign Up</button>
+          <button class="btn btn-block signUp ml-3 mb-3">Sign Up</button>
         </div>
    
         <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">

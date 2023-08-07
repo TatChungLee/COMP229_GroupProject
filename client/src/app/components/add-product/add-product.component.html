@@ -1,5 +1,11 @@
+<div class="container">
+  <header class="jumbotron">
+    <h1>Add</h1>
+  </header>
+</div>
+
 <div>
-  <div class="submit-form">
+  <div class="submit-form mt-3 mb-2">
     <div *ngIf="!submitted">
       <div class="form-group">
         <label for="name">Name</label>
@@ -58,12 +64,12 @@
       
 
 
-      <button (click)="saveProduct()" class="btn btn-success">Submit</button>
+      <button (click)="saveProduct()" class="btn submit-button mb-5">SUBMIT</button>
     </div>
 
     <div *ngIf="submitted">
-      <h4>Product was submitted successfully!</h4>
-      <button class="btn btn-success" (click)="newProduct()">Add</button>
+      <h5>The product was added successfully!</h5>
+      <button class="btn submit-button mt-2" (click)="newProduct()">ADD NEW</button>
     </div>
   </div>
 </div>
